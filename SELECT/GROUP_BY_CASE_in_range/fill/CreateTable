@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `sales` (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name_good VARCHAR(255) NOT NULL,
+    count_kg INT NOT NULL,
+    price_per_one decimal(8, 2) NOT NULL,
+    price_total decimal(8, 2) AS (price_per_one*count_kg)
+);

@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS `orders` (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    eploy_code VARCHAR(15) NOT NULL,
+    amount decimal(8, 2) NOT NULL,
+    order_status VARCHAR(15)
+);
